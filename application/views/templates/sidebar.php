@@ -35,10 +35,35 @@
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('index.php/kategori/pakaian_pria') ?>">
+                <a class="nav-link" href="<?php echo base_url('index.php/kategori/tshirt_pria') ?>">
                     <i class="fas fa-fw fa-tshirt"></i>
-                    <span>Pakaian Pria</span></a>
+                    <span>T-Shirt Pria</span></a>
             </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url('index.php/kategori/kemeja_pria') ?>">
+                    <i class="fas fa-fw fa-tshirt"></i>
+                    <span>Kemeja Pria</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url('index.php/kategori/jaket_pria') ?>">
+                    <i class="fas fa-fw fa-tshirt"></i>
+                    <span>Jaket Pria</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url('index.php/kategori/hoodie_pria') ?>">
+                    <i class="fas fa-fw fa-tshirt"></i>
+                    <span>Hoodie Pria</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url('index.php/kategori/batik_pria') ?>">
+                    <i class="fas fa-fw fa-tshirt"></i>
+                    <span>Batik Pria</span></a>
+            </li>
+
 
             <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url('index.php/kategori/pakaian_wanita') ?>">
@@ -74,7 +99,7 @@
                     <!-- Topbar Search -->
                     <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Mau cari apa..." aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <button class="btn btn-danger" type="button">
                                     <i class="fas fa-search fa-sm"></i>
@@ -110,7 +135,7 @@
                             <ul class="nav navbar-nav navbar-right">
                                 <li>
                                     <?php
-                                    $keranjang = 'Keranjang Belanja: ' . $this->cart->total_items() . ' items' ?>
+                                    $keranjang = 'Keranjang Belanja: ' . $this->cart->total_items() . ' Barang' ?>
 
                                     <?php echo anchor('index.php/dashboard/detail_keranjang', $keranjang) ?>
                                 </li>
