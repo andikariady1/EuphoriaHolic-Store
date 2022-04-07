@@ -19,13 +19,13 @@
 
                                     <?php echo $this->session->flashdata('pesan') ?>
 
-                                    <form method="post" action="<?php echo base_url('index.php/auth/login') ?>" class="user">
+                                    <form method="post" action="<?php echo base_url('auth/login') ?>" class="user">
                                         <div class="form-group">
                                             <input type="text" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Masukan Username" name="username">
                                             <?php echo form_error('username', '<div class="text-danger small ml-2">', '</div>'); ?>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" name="password">
+                                            <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" name="password">
                                             <?php echo form_error('password', '<div class="text-danger small ml-2">', '</div>'); ?>
                                         </div>
 
@@ -33,7 +33,7 @@
                                     </form>
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" href="<?php echo base_url('index.php/registrasi/index') ?>">Belum Punya Akun? Daftar!</a>
+                                        <a class="small" href="<?php echo base_url('registrasi/index') ?>">Belum Punya Akun? Daftar!</a>
                                     </div>
                                 </div>
                             </div>

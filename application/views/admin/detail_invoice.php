@@ -36,7 +36,7 @@
 
     </table>
 
-    <a href="<?php echo base_url('index.php/admin/invoice/index') ?>">
+    <a href="<?php echo base_url('admin/invoice/index') ?>">
         <div class="btn btn-sm btn-danger">Kembali</div>
     </a>
 

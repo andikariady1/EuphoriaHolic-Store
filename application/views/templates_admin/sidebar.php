@@ -19,20 +19,20 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="<?php echo base_url('index.php/admin/Dash_admin') ?>">
+                <a class="nav-link" href="<?php echo base_url('admin/Dash_admin') ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('index.php/admin/data_barang') ?>">
+                <a class="nav-link" href="<?php echo base_url('admin/data_barang') ?>">
                     <i class="fas fa-fw fa-database"></i>
                     <span>Data Barang</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('index.php/admin/invoice') ?>">
+                <a class="nav-link" href="<?php echo base_url('admin/invoice') ?>">
                     <i class="fas fa-fw fa-file-invoice"></i>
                     <span>Invoices</span></a>
             </li>
@@ -104,9 +104,9 @@
                                 <li>
                                     <div>Selamat Datang <?php echo $this->session->userdata('username') ?></div>
                                 </li>
-                                <li class="ml-2"><?php echo anchor('index.php/auth/logout', 'Logout') ?></li>
+                                <li class="ml-2"><?php echo anchor('auth/logout', 'Logout') ?></li>
                             <?php } else { ?>
-                                <li><?php echo anchor('index.php/auth/login', 'Login'); ?></li>
+                                <li><?php echo anchor('auth/login', 'Login'); ?></li>
                             <?php } ?>
 
                         </ul>
