@@ -10,7 +10,7 @@ class Dashboard extends CI_Controller
         if ($this->session->userdata('role_id') != '2') {
             $this->session->set_flashdata('pesan', '<div class="alert alert-warning alert-dismissible fade show" role="alert">Anda Belum Login!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>');
-            redirect('index.php/auth/login');
+            redirect('auth/login');
         }
     }
 
@@ -26,7 +26,7 @@ class Dashboard extends CI_Controller
         );
 
         $this->cart->insert($data);
-        redirect('index.php/welcome');
+        redirect('welcome');
     }
 
     public function detail_keranjang()
@@ -40,7 +40,7 @@ class Dashboard extends CI_Controller
     public function hapus_keranjang()
     {
         $this->cart->destroy();
-        redirect('index.php/welcome');
+        redirect('welcome');
     }
 
     public function pembayaran()

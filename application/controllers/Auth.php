@@ -21,17 +21,17 @@ class Auth extends CI_Controller
             if ($auth == FALSE) {
                 $this->session->set_flashdata('pesan', '<div class="alert alert-warning alert-dismissible fade show" role="alert">Username atau Password Anda Salah!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>');
-                redirect('index.php/auth/login');
+                redirect('auth/login');
             } else {
                 $this->session->set_userdata('username', $auth->username);
                 $this->session->set_userdata('role_id', $auth->role_id);
 
                 switch ($auth->role_id) {
                     case 1:
-                        redirect('index.php/admin/dash_admin');
+                        redirect('admin/dash_admin');
                         break;
                     case 2:
-                        redirect('index.php/welcome');
+                        redirect('welcome');
                         break;
                     default:
                         break;
@@ -43,6 +43,6 @@ class Auth extends CI_Controller
     public function logout()
     {
         $this->session->sess_destroy();
-        redirect('index.php/auth/login');
+        redirect('auth/login');
     }
 }
