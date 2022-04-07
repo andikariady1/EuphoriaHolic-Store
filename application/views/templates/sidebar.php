@@ -19,7 +19,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="<?php echo base_url('index.php/welcome') ?>">
+                <a class="nav-link" href="<?php echo base_url('welcome') ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -29,44 +29,48 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Kategori Produk
+                PAKAIAN PRIA
             </div>
-
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('index.php/kategori/tshirt_pria') ?>">
+                <a class="nav-link" href="<?php echo base_url('kategori/tshirt_pria') ?>">
                     <i class="fas fa-fw fa-tshirt"></i>
                     <span>T-Shirt Pria</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('index.php/kategori/kemeja_pria') ?>">
+                <a class="nav-link" href="<?php echo base_url('kategori/kemeja_pria') ?>">
                     <i class="fas fa-fw fa-tshirt"></i>
                     <span>Kemeja Pria</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('index.php/kategori/jaket_pria') ?>">
+                <a class="nav-link" href="<?php echo base_url('kategori/jaket_pria') ?>">
                     <i class="fas fa-fw fa-tshirt"></i>
                     <span>Jaket Pria</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('index.php/kategori/hoodie_pria') ?>">
+                <a class="nav-link" href="<?php echo base_url('kategori/hoodie_pria') ?>">
                     <i class="fas fa-fw fa-tshirt"></i>
                     <span>Hoodie Pria</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('index.php/kategori/batik_pria') ?>">
+                <a class="nav-link" href="<?php echo base_url('kategori/batik_pria') ?>">
                     <i class="fas fa-fw fa-tshirt"></i>
                     <span>Batik Pria</span></a>
             </li>
 
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                PAKAIAN WANITA
+            </div>
+
 
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('index.php/kategori/pakaian_wanita') ?>">
+                <a class="nav-link" href="<?php echo base_url('kategori/pakaian_wanita') ?>">
                     <i class="fas fa-fw fa-tshirt"></i>
                     <span>Pakaian Wanita</span></a>
             </li>
@@ -137,7 +141,7 @@
                                     <?php
                                     $keranjang = 'Keranjang Belanja: ' . $this->cart->total_items() . ' Barang' ?>
 
-                                    <?php echo anchor('index.php/dashboard/detail_keranjang', $keranjang) ?>
+                                    <?php echo anchor('dashboard/detail_keranjang', $keranjang) ?>
                                 </li>
                             </ul>
 
@@ -148,9 +152,9 @@
                                     <li>
                                         <div>Selamat Datang <?php echo $this->session->userdata('username') ?></div>
                                     </li>
-                                    <li class="ml-2"><?php echo anchor('index.php/auth/logout', 'Logout') ?></li>
+                                    <li class="ml-2"><?php echo anchor('auth/logout', 'Logout') ?></li>
                                 <?php } else { ?>
-                                    <li><?php echo anchor('index.php/auth/login', 'Login'); ?></li>
+                                    <li><?php echo anchor('auth/login', 'Login'); ?></li>
                                 <?php } ?>
 
                             </ul>
