@@ -38,7 +38,7 @@
         <a href="<?php echo base_url('welcome') ?>">
             <div class="btn btn-sm btn-primary">Lanjutkan Belanja</div>
         </a>
-        <a href="<?php echo base_url('dashboard/pembayaran') ?>">
+        <a href="<?php echo base_url('welcome/pembayaran') ?>">
             <div class="btn btn-sm btn-success">Pembayaran</div>
         </a>
 
