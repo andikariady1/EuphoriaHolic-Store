@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 06 Apr 2022 pada 04.41
+-- Generation Time: 09 Apr 2022 pada 12.55
 -- Versi Server: 10.1.30-MariaDB
 -- PHP Version: 5.6.33
 
@@ -43,21 +43,21 @@ CREATE TABLE `barang` (
 --
 
 INSERT INTO `barang` (`id_brg`, `nama_brg`, `keterangan`, `kategori`, `harga`, `stok`, `gambar`) VALUES
-(1, 'Blouse Pink', 'Blouse from Cotton Ink', 'Pakaian Wanita', 295000, 6, 'blouse.jpg'),
-(3, 'Dress', 'Dress from Beatrice Clothing', 'Pakaian Wanita', 200000, 3, 'dress.jpg'),
-(6, 'Oversized Sweater Hoodie', 'from Zahra Signature', 'Pakaian Wanita', 250000, 4, 'hoodiew.jpg'),
+(1, 'Blouse Pink', 'Blouse from Cotton Ink', 'Pakaian Wanita', 295000, 4009, 'blouse.jpg'),
+(3, 'Dress', 'Dress from Beatrice Clothing', 'Pakaian Wanita', 200000, 3561, 'dress.jpg'),
+(6, 'Oversized Sweater Hoodie', 'from Zahra Signature', 'Pakaian Wanita', 250000, 4431, 'hoodiew.jpg'),
 (7, 'Buttoned Loose Floral Shirt', 'Kemeja from Pomelo', 'Pakaian Wanita', 439000, 69, 'kemejaw.jpg'),
-(8, 'Natura Hoodie Jacket', 'From Rubylicious', 'Pakaian Wanita', 149000, 9, 'jaketw.jpg'),
-(9, 'Coral Batik Melati Two-Tone', 'From Cotton Ink', 'Pakaian Wanita', 150000, 5, 'batikwanita.jpg'),
-(11, 'Treya Skirt', 'From Chic Girl', 'Pakaian Wanita', 180000, 67, 'rok.jpg'),
-(12, 'Swing Skirt', 'from Danora', 'Pakaian Wanita', 150000, 8, 'rokpjg.jpg'),
+(8, 'Natura Hoodie Jacket', 'From Rubylicious', 'Pakaian Wanita', 149000, 9432, 'jaketw.jpg'),
+(9, 'Coral Batik Melati Two-Tone', 'From Cotton Ink', 'Pakaian Wanita', 150000, 54324, 'batikwanita.jpg'),
+(11, 'Treya Skirt', 'From Chic Girl', 'Pakaian Wanita', 180000, 67432, 'rok.jpg'),
+(12, 'Swing Skirt', 'from Danora', 'Pakaian Wanita', 150000, 84, 'rokpjg.jpg'),
 (13, 'Celana Jeans', 'from Zara', 'Pakaian Wanita', 500000, 80, 'celana.jpg'),
 (14, 'Diamond Pants', 'from Hailey', 'Pakaian Wanita', 125000, 95, 'celanapen.jpg'),
 (15, 'Fringe Lace Kimono Cardigan', 'from Liva Girl', 'Pakaian Wanita', 150000, 75, 'cardigan.jpg'),
 (16, 'Antidot', 'from Raivan', 'Pakaian Wanita', 175000, 75, 'tshirtW.jpg'),
 (17, 'Meccanism', 'from Zaskia Mecca', 'Pakaian Wanita', 75000, 69, 'hijab.jpg'),
 (21, 'Double Breasted Waistcoat', 'from Zalora Basics', 'Pakaian Pria', 330000, 67, 'rompipria.jpg'),
-(22, 'Celana Chino', 'from Zara', 'Pakaian Pria', 67000, 6, 'celanapr.jpg'),
+(22, 'Celana Chino', 'from Zara', 'Pakaian Pria', 67000, 6444, 'celanapr.jpg'),
 (26, 'Adidas', 'Bahan 100% dari cotton single jersey yang terasa lembut di badan.', 'T-Shirt Pria', 312000, 1233, 'kaosp_2.jpg'),
 (27, 'Geof Maxx', 'Kaos dengan Kualitas yang tidak diragukan lagi.', 'T-Shirt Pria', 70000, 4322, 'kaosp_3.jpg'),
 (28, 'Screamous', 'Kainnya memiliki kualitas yang sangat baik dengan sentuhan akhir yang sempurna', 'T-Shirt Pria', 76000, 43, 'kaosp_4.jpg'),
@@ -102,8 +102,8 @@ CREATE TABLE `invoice` (
 --
 
 INSERT INTO `invoice` (`id`, `nama`, `alamat`, `tgl_pesan`, `batas_bayar`) VALUES
-(8, '', '', '2021-12-07 21:02:42', '2021-12-08 21:02:42'),
-(10, 'Alana van Debora', 'Bekasi, Jawa Barat', '2021-12-07 23:14:05', '2021-12-08 23:14:05');
+(10, 'Alana van Debora', 'Bekasi, Jawa Barat', '2021-12-07 23:14:05', '2021-12-08 23:14:05'),
+(11, 'Queen Faradiba Al Isra Syam', 'Bekasi, Jawa Barat', '2022-04-07 14:33:12', '2022-04-08 14:33:12');
 
 -- --------------------------------------------------------
 
@@ -131,7 +131,12 @@ INSERT INTO `pesanan` (`id`, `id_invoice`, `id_brg`, `nama_brg`, `jumlah`, `harg
 (14, 8, 3, 'Dress', 2, 200000, ''),
 (17, 10, 1, 'Blouse', 2, 295000, ''),
 (18, 10, 3, 'Dress', 1, 200000, ''),
-(19, 10, 6, 'Oversized Sweater Hoodie', 1, 250000, '');
+(19, 10, 6, 'Oversized Sweater Hoodie', 1, 250000, ''),
+(20, 11, 1, 'Blouse Pink', 1, 295000, ''),
+(21, 12, 1, 'Blouse Pink', 1, 295000, ''),
+(22, 13, 3, 'Dress', 1, 200000, ''),
+(23, 14, 3, 'Dress', 1, 200000, ''),
+(24, 15, 6, 'Oversized Sweater Hoodie', 1, 250000, '');
 
 --
 -- Trigger `pesanan`
@@ -153,19 +158,25 @@ DELIMITER ;
 CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `nama` varchar(50) NOT NULL,
+  `alamat` text NOT NULL,
   `username` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
-  `role_id` tinyint(1) NOT NULL
+  `image` varchar(128) NOT NULL,
+  `role_id` tinyint(1) NOT NULL,
+  `is_active` int(11) NOT NULL,
+  `tanggal_input` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `user`
 --
 
-INSERT INTO `user` (`id`, `nama`, `username`, `password`, `role_id`) VALUES
-(1, 'admin', 'admin', '123', 1),
-(2, 'user', 'user', '123', 2),
-(6, 'Alana', 'Alana', '123', 2);
+INSERT INTO `user` (`id`, `nama`, `alamat`, `username`, `password`, `image`, `role_id`, `is_active`, `tanggal_input`) VALUES
+(1, 'Admin', '', 'Admin', '123', '', 1, 0, 0),
+(2, 'user', '', 'user', '123', '', 2, 0, 0),
+(7, 'Queen Faradiba', '', 'QueenFrdb', '123', '', 2, 0, 0),
+(11, 'Queen Faradiba Al Isra Syam', '', 'QueenFrdb', '123', 'default.jpg', 2, 0, 1649439074),
+(12, 'Alana van Debora', 'Bandung, Jawa Barat', 'Alana', '123', 'default.jpg', 2, 0, 1649480284);
 
 --
 -- Indexes for dumped tables
@@ -209,19 +220,19 @@ ALTER TABLE `barang`
 -- AUTO_INCREMENT for table `invoice`
 --
 ALTER TABLE `invoice`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `pesanan`
 --
 ALTER TABLE `pesanan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
