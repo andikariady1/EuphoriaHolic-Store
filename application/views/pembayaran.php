@@ -20,7 +20,7 @@
 
                 <div class="form-group">
                     <label>Nama Lengkap</label>
-                    <input type="text" name="nama" placeholder="Nama Lengkap Anda" class="form-control">
+                    <input type="text" name="nama" placeholder="Nama Lengkap Anda" class="form-control" value="<?= $user; ?>" readonly>
                 </div>
 
                 <div class="form-group">
