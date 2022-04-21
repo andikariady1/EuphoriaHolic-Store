@@ -192,9 +192,9 @@ class Welcome extends CI_Controller
 		}
 	}
 
-	public function pakaian_wanita()
+	public function dress_wanita()
 	{
-		$data['pakaian_wanita'] = $this->ModelKategori->data_pakaian_wanita()->result();
+		$data['dress_wanita'] = $this->ModelKategori->data_dress_wanita()->result();
 		if ($this->session->userdata('username')) {
 			$user = $this->ModelUser->cekData(['username' => $this->session->userdata('username')])->row_array();
 
@@ -202,13 +202,97 @@ class Welcome extends CI_Controller
 
 			$this->load->view('templates_user/header', $data);
 			$this->load->view('templates_user/sidebar');
-			$this->load->view('pakaian_wanita', $data);
+			$this->load->view('dress_wanita', $data);
 			$this->load->view('templates_user/footer', $data);
 		} else {
 			$data['user'] = 'Pengunjung';
 			$this->load->view('templates/header', $data);
 			$this->load->view('templates/sidebar');
-			$this->load->view('pakaian_wanita', $data);
+			$this->load->view('dress_wanita', $data);
+			$this->load->view('templates/footer', $data);
+		}
+	}
+
+	public function hoodie_wanita()
+	{
+		$data['hoodie_wanita'] = $this->ModelKategori->data_hoodie_wanita()->result();
+		if ($this->session->userdata('username')) {
+			$user = $this->ModelUser->cekData(['username' => $this->session->userdata('username')])->row_array();
+
+			$data['user'] = $user['nama'];
+
+			$this->load->view('templates_user/header', $data);
+			$this->load->view('templates_user/sidebar');
+			$this->load->view('hoodie_wanita', $data);
+			$this->load->view('templates_user/footer', $data);
+		} else {
+			$data['user'] = 'Pengunjung';
+			$this->load->view('templates/header', $data);
+			$this->load->view('templates/sidebar');
+			$this->load->view('hoodie_wanita', $data);
+			$this->load->view('templates/footer', $data);
+		}
+	}
+
+	public function jaket_wanita()
+	{
+		$data['jaket_wanita'] = $this->ModelKategori->data_jaket_wanita()->result();
+		if ($this->session->userdata('username')) {
+			$user = $this->ModelUser->cekData(['username' => $this->session->userdata('username')])->row_array();
+
+			$data['user'] = $user['nama'];
+
+			$this->load->view('templates_user/header', $data);
+			$this->load->view('templates_user/sidebar');
+			$this->load->view('jaket_wanita', $data);
+			$this->load->view('templates_user/footer', $data);
+		} else {
+			$data['user'] = 'Pengunjung';
+			$this->load->view('templates/header', $data);
+			$this->load->view('templates/sidebar');
+			$this->load->view('jaket_wanita', $data);
+			$this->load->view('templates/footer', $data);
+		}
+	}
+
+	public function rok_wanita()
+	{
+		$data['rok_wanita'] = $this->ModelKategori->data_rok_wanita()->result();
+		if ($this->session->userdata('username')) {
+			$user = $this->ModelUser->cekData(['username' => $this->session->userdata('username')])->row_array();
+
+			$data['user'] = $user['nama'];
+
+			$this->load->view('templates_user/header', $data);
+			$this->load->view('templates_user/sidebar');
+			$this->load->view('rok_wanita', $data);
+			$this->load->view('templates_user/footer', $data);
+		} else {
+			$data['user'] = 'Pengunjung';
+			$this->load->view('templates/header', $data);
+			$this->load->view('templates/sidebar');
+			$this->load->view('rok_wanita', $data);
+			$this->load->view('templates/footer', $data);
+		}
+	}
+
+	public function cardigan_wanita()
+	{
+		$data['cardigan_wanita'] = $this->ModelKategori->data_cardigan_wanita()->result();
+		if ($this->session->userdata('username')) {
+			$user = $this->ModelUser->cekData(['username' => $this->session->userdata('username')])->row_array();
+
+			$data['user'] = $user['nama'];
+
+			$this->load->view('templates_user/header', $data);
+			$this->load->view('templates_user/sidebar');
+			$this->load->view('cardigan_wanita', $data);
+			$this->load->view('templates_user/footer', $data);
+		} else {
+			$data['user'] = 'Pengunjung';
+			$this->load->view('templates/header', $data);
+			$this->load->view('templates/sidebar');
+			$this->load->view('cardigan_wanita', $data);
 			$this->load->view('templates/footer', $data);
 		}
 	}

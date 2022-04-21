@@ -27,8 +27,28 @@ class ModelKategori extends CI_Model
         return $this->db->get_where("barang", array('kategori' => 'batik pria'));
     }
 
-    public function data_pakaian_wanita()
+    public function data_dress_wanita()
     {
-        return $this->db->get_where("barang", array('kategori' => 'pakaian wanita'));
+        return $this->db->get_where("barang", array('kategori' => 'dress wanita'));
+    }
+
+    public function data_hoodie_wanita()
+    {
+        return $this->db->get_where("barang", array('kategori' => 'hoodie wanita'));
+    }
+
+    public function data_jaket_wanita()
+    {
+        return $this->db->get_where("barang", array('kategori' => 'jaket wanita'));
+    }
+
+    public function data_rok_wanita()
+    {
+        return $this->db->get_where("barang", array('kategori' => 'rok wanita'));
+    }
+
+    public function data_cardigan_wanita()
+    {
+        return $this->db->get_where("barang", array('kategori' => 'cardigan wanita'));
     }
 }

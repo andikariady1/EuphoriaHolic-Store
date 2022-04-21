@@ -57,13 +57,16 @@
                     <div class="form-group">
                         <label>Kategori</label>
                         <select class="form-control" name="kategori">
-                            <option>Pakaian Pria</option>
                             <option>T-Shirt Pria</option>
                             <option>Kemeja Pria</option>
                             <option>Jaket Pria</option>
                             <option>Hoodie Pria</option>
                             <option>Batik Pria</option>
-                            <option>Pakaian Wanita</option>
+                            <option>Dress Wanita</option>
+                            <option>Hoodie Wanita</option>
+                            <option>Jaket Wanita</option>
+                            <option>Rok Wanita</option>
+                            <option>Cardigan Wanita</option>
                         </select>
                     </div>
                     <div class="form-group">

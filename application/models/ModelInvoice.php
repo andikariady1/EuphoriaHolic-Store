@@ -60,4 +60,14 @@ class ModelInvoice extends CI_Model
             return false;
         }
     }
+
+    public function total($row, $where)
+    {
+        $this->db->select_sum($row);
+        if (!empty($where) && count($where) > 0) {
+            $this->db->where($where);
+        }
+        $this->db->from('pesanan');
+        return $this->db->get()->row($row);
+    }
 }

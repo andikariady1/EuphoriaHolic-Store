@@ -93,4 +93,17 @@ class ProfilUser extends CI_Controller
             redirect('profiluser/myprofil');
         }
     }
+
+    public function pelanggan()
+    {
+        $data['judul'] = 'Data Pelanggan';
+        $data['user'] = $this->ModelUser->cekData(['username' => $this->session->userdata('username')])->row_array();
+        $this->db->where('role_id', 2);
+        $data['pelanggan'] = $this->db->get('user')->result_array();
+
+        $this->load->view('templates_admin/header', $data);
+        $this->load->view('templates_admin/sidebar', $data);
+        $this->load->view('user/pelanggan', $data);
+        $this->load->view('templates_admin/footer');
+    }
 }

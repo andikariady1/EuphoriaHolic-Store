@@ -47,13 +47,48 @@ class Kategori extends CI_Controller
         $this->load->view('templates/footer');
     }
 
-
-    public function pakaian_wanita()
+    public function dress_wanita()
     {
-        $data['pakaian_wanita'] = $this->ModelKategori->data_pakaian_wanita()->result();
+        $data['dress_wanita'] = $this->ModelKategori->data_dress_wanita()->result();
         $this->load->view('templates/header');
         $this->load->view('templates/sidebar');
-        $this->load->view('pakaian_wanita', $data);
+        $this->load->view('dress_wanita', $data);
+        $this->load->view('templates/footer');
+    }
+
+    public function hoodie_wanita()
+    {
+        $data['hoodie_wanita'] = $this->ModelKategori->data_hoodie_wanita()->result();
+        $this->load->view('templates/header');
+        $this->load->view('templates/sidebar');
+        $this->load->view('hoodie_wanita', $data);
+        $this->load->view('templates/footer');
+    }
+
+    public function jaket_wanita()
+    {
+        $data['jaket_wanita'] = $this->ModelKategori->data_jaket_wanita()->result();
+        $this->load->view('templates/header');
+        $this->load->view('templates/sidebar');
+        $this->load->view('jaket_wanita', $data);
+        $this->load->view('templates/footer');
+    }
+
+    public function rok_wanita()
+    {
+        $data['rok_wanita'] = $this->ModelKategori->data_rok_wanita()->result();
+        $this->load->view('templates/header');
+        $this->load->view('templates/sidebar');
+        $this->load->view('rok_wanita', $data);
+        $this->load->view('templates/footer');
+    }
+
+    public function cardigan_wanita()
+    {
+        $data['cardigan_wanita'] = $this->ModelKategori->data_cardigan_wanita()->result();
+        $this->load->view('templates/header');
+        $this->load->view('templates/sidebar');
+        $this->load->view('cardigan_wanita', $data);
         $this->load->view('templates/footer');
     }
 }

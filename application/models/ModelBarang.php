@@ -50,4 +50,25 @@ class ModelBarang extends CI_Model
             return false;
         }
     }
+
+    public function total($field, $where)
+    {
+        $this->db->select_sum($field);
+        if (!empty($where) && count($where) > 0) {
+            $this->db->where($where);
+        }
+        $this->db->from('barang');
+        return $this->db->get()->row($field);
+    }
+
+    public function getLimitBarang()
+    {
+        $this->db->limit(5);
+        return $this->db->get('barang');
+    }
+
+    public function getKategori($where)
+    {
+        return $this->db->get('barang');
+    }
 }
