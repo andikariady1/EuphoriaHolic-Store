@@ -91,18 +91,16 @@ class Laporan extends CI_Controller
         $this->load->view('user/laporan_print_pelanggan', $data);
     }
 
-    //public function laporan_pembelian()
-    //{
+    public function laporan_pembelian()
+    {
 
-    //$data['judul'] = 'Laporan Data Pembelian';
-    //$data['user'] = $this->ModelUser->cekData(['username' => $this->session->userdata('username')])->row_array();
-    //$data['laporan'] = $this->db->query("select * from pinjam p,detail_pinjam d,buku b,user u where d.id_buku=b.id and p.id_user=u.id and p.no_pinjam=d.no_pinjam")->result_array();
+        $data['judul'] = 'Laporan Data Pembelian';
+        $data['user'] = $this->ModelUser->cekData(['username' => $this->session->userdata('username')])->row_array();
+        $data['laporan'] = $this->db->get('pesanan')->result_array();
 
-    //$this->load->view('templates/header', $data);
-    //$this->load->view('templates/sidebar');
-    //$this->load->view('templates/topbar', $data);
-    //$this->load->view('pinjam/laporan-pinjam', $data);
-    //$this->load->view('templates/footer');
-    //}
-
+        $this->load->view('templates_admin/header', $data);
+        $this->load->view('templates_admin/sidebar');
+        $this->load->view('pesanan/laporan_pesanan', $data);
+        $this->load->view('templates_admin/footer');
+    }
 }

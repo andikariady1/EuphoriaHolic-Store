@@ -22,24 +22,18 @@
                     <tr>
                         <th scope="col">Id</th>
                         <th scope="col">Nama Barang</th>
-                        <th scope="col">Keterangan</th>
-                        <th scope="col">Kategori</th>
-                        <th scope="col">Harga</th>
-                        <th scope="col">Stok</th>
+                        <th scope="col">Status</th>
                     </tr>
                 </thead>
                 <tbody>
 
                     <?php
                     $a = 1;
-                    foreach ($barang as $b) { ?>
+                    foreach ($laporan as $l) { ?>
                         <tr>
                             <th scope="row"><?= $a++; ?></th>
-                            <td><?= $b['nama_brg']; ?></td>
-                            <td><?= $b['keterangan']; ?></td>
-                            <td><?= $b['kategori']; ?></td>
-                            <td><?= $b['harga']; ?></td>
-                            <td><?= $b['stok']; ?></td>
+                            <td><?= $l['nama_brg']; ?></td>
+                            <td><?= $l['status']; ?></td>
                         </tr>
                     <?php } ?>
                 </tbody>

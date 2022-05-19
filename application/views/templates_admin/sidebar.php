@@ -95,7 +95,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('admin/invoice') ?>">
+                <a class="nav-link" href="<?php echo base_url('admin/laporan/laporan_pembelian') ?>">
                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
                         <path fill="currentColor" d="M28 6H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Zm0 2v3H4V8ZM4 24V13h24v11Z" />
                         <path fill="currentColor" d="M6 20h10v2H6z" />
