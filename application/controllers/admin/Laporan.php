@@ -41,7 +41,7 @@ class Laporan extends CI_Controller
             $data['barang'] = $this->ModelBarang->tampil_data()->result_array();
             $sroot = $_SERVER['DOCUMENT_ROOT'];
             include $sroot . "/pustaka-booking/application/third_party/dompdf/autoload.inc.php";
-            $dompdf = new Dompdf\Dompdf();
+            //$dompdf = new Dompdf\Dompdf();
 
             $this->load->view('barang/laporan_pdf', $data);
 

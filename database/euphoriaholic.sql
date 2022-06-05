@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 18 Mei 2022 pada 15.01
+-- Generation Time: 05 Jun 2022 pada 07.19
 -- Versi Server: 10.1.30-MariaDB
 -- PHP Version: 5.6.33
 
@@ -43,9 +43,9 @@ CREATE TABLE `barang` (
 --
 
 INSERT INTO `barang` (`id_brg`, `nama_brg`, `keterangan`, `kategori`, `harga`, `stok`, `gambar`) VALUES
-(1, 'Adidas', 'Bahan 100% dari cotton single jersey yang terasa lembut di badan.', 'T-Shirt Pria', 312000, 1227, 'kaosp_2.jpg'),
-(2, 'Geof Maxx', 'Kaos dengan Kualitas yang tidak diragukan lagi.', 'T-Shirt Pria', 70000, 4321, 'kaosp_3.jpg'),
-(3, 'Screamous', 'Kainnya memiliki kualitas yang sangat baik dengan sentuhan akhir yang sempurna', 'T-Shirt Pria', 76000, 43, 'kaosp_4.jpg'),
+(1, 'Adidas', 'Bahan 100% dari cotton single jersey yang terasa lembut di badan.', 'T-Shirt Pria', 312000, 1224, 'kaosp_2.jpg'),
+(2, 'Geof Maxx', 'Kaos dengan Kualitas yang tidak diragukan lagi.', 'T-Shirt Pria', 70000, 4320, 'kaosp_3.jpg'),
+(3, 'Screamous', 'Kainnya memiliki kualitas yang sangat baik dengan sentuhan akhir yang sempurna', 'T-Shirt Pria', 76000, 42, 'kaosp_4.jpg'),
 (4, 'Walexa ', ' Merek Jepang yang diciptakan dua puluh tahun lalu ini telah berhasil menggabungkan aksesibilitas ke produk organik.', 'T-Shirt Pria', 125000, 54, 'kaosp5.jpg'),
 (5, '180 Degrees', 'Regular fit tidak terlalu ketat juga tidak terlalu baggy. Cocok untuk penampilan kasual Anda sehari-hari.', 'T-Shirt Pria', 45000, 432, 'kaosp6.jpg'),
 (6, 'Levis', 'Dengan beragam pilihan model dan bahan yang nyaman dipakai, kemeja ini dapat diandalkan untuk menemani aktivitas padatmu sepanjang hari.', 'Kemeja Pria', 140000, 52, 'kemejap2.jpg'),
@@ -110,7 +110,48 @@ CREATE TABLE `invoice` (
 --
 
 INSERT INTO `invoice` (`id`, `nama`, `alamat`, `tgl_pesan`, `batas_bayar`) VALUES
-(18, 'Alana van Debora', '', '2022-04-23 16:44:03', '2022-04-24 16:44:03');
+(18, 'Alana van Debora', '', '2022-04-23 16:44:03', '2022-04-24 16:44:03'),
+(19, 'Alana van Debora', '', '2022-05-24 10:32:57', '2022-05-25 10:32:57'),
+(20, 'Alana van Debora', '', '2022-05-24 10:33:52', '2022-05-25 10:33:52'),
+(21, 'Alana van Debora', '', '2022-05-24 10:34:27', '2022-05-25 10:34:27'),
+(22, 'Alana van Debora', '', '2022-05-24 10:34:41', '2022-05-25 10:34:41'),
+(23, 'Alana van Debora', '', '2022-05-24 10:35:00', '2022-05-25 10:35:00'),
+(24, 'Alana van Debora', '', '2022-05-24 10:35:32', '2022-05-25 10:35:32'),
+(25, 'Alana van Debora', '', '2022-05-24 10:36:07', '2022-05-25 10:36:07'),
+(26, 'Alana van Debora', '', '2022-05-24 10:37:20', '2022-05-25 10:37:20'),
+(27, 'Alana van Debora', '', '2022-05-24 10:38:26', '2022-05-25 10:38:26'),
+(28, 'Alana van Debora', '', '2022-05-24 10:38:36', '2022-05-25 10:38:36'),
+(29, 'Alana van Debora', '', '2022-05-24 10:39:01', '2022-05-25 10:39:01'),
+(30, 'Alana van Debora', '', '2022-05-24 10:41:01', '2022-05-25 10:41:01'),
+(31, 'Alana van Debora', '', '2022-05-24 10:42:30', '2022-05-25 10:42:30'),
+(32, 'Alana van Debora', '', '2022-05-24 10:48:53', '2022-05-25 10:48:53'),
+(33, 'Alana van Debora', '', '2022-05-24 10:49:27', '2022-05-25 10:49:27'),
+(34, 'Alana van Debora', '', '2022-05-24 10:50:58', '2022-05-25 10:50:58'),
+(35, 'Alana van Debora', '', '2022-05-24 10:51:47', '2022-05-25 10:51:47'),
+(36, 'Alana van Debora', '', '2022-05-24 10:52:31', '2022-05-25 10:52:31'),
+(37, 'Alana van Debora', '', '2022-05-24 10:52:43', '2022-05-25 10:52:43'),
+(38, 'Alana van Debora', '', '2022-05-24 10:52:52', '2022-05-25 10:52:52'),
+(39, 'Alana van Debora', '', '2022-05-24 11:04:03', '2022-05-25 11:04:03'),
+(40, 'Alana van Debora', '', '2022-05-24 11:05:07', '2022-05-25 11:05:07'),
+(41, 'Alana van Debora', '', '2022-05-24 11:05:56', '2022-05-25 11:05:56'),
+(42, 'Alana van Debora', '', '2022-05-24 11:06:24', '2022-05-25 11:06:24'),
+(43, 'Alana van Debora', '', '2022-05-24 11:08:13', '2022-05-25 11:08:13'),
+(44, 'Alana van Debora', '', '2022-05-24 11:08:17', '2022-05-25 11:08:17'),
+(45, 'Alana van Debora', '', '2022-05-24 11:08:52', '2022-05-25 11:08:52'),
+(46, 'Alana van Debora', '', '2022-05-24 11:09:08', '2022-05-25 11:09:08'),
+(47, 'Alana van Debora', '', '2022-05-24 11:10:09', '2022-05-25 11:10:09'),
+(48, 'Alana van Debora', '', '2022-05-24 11:14:31', '2022-05-25 11:14:31'),
+(49, 'Alana van Debora', 'Bekasi, Jawa Barat', '2022-06-01 20:39:07', '2022-06-02 20:39:07'),
+(50, 'Alana van Debora', 'Bekasi, Jawa Barat', '2022-06-01 20:44:07', '2022-06-02 20:44:07'),
+(51, 'Alana van Debora', 'Bekasi, Jawa Barat', '2022-06-01 20:44:35', '2022-06-02 20:44:35'),
+(52, 'Alana van Debora', 'Bekasi, Jawa Barat', '2022-06-01 20:44:39', '2022-06-02 20:44:39'),
+(53, 'Alana van Debora', 'Bekasi, Jawa Barat', '2022-06-01 20:44:40', '2022-06-02 20:44:40'),
+(54, 'Alana van Debora', 'Bekasi, Jawa Barat', '2022-06-01 20:46:04', '2022-06-02 20:46:04'),
+(55, 'Alana van Debora', 'Bekasi, Jawa Barat', '2022-06-01 20:47:28', '2022-06-02 20:47:28'),
+(56, 'Alana van Debora', 'Bekasi, Jawa Barat', '2022-06-01 20:49:13', '2022-06-02 20:49:13'),
+(57, 'Alana van Debora', 'Bekasi, Jawa Barat', '2022-06-01 20:51:23', '2022-06-02 20:51:23'),
+(58, 'Alana van Debora', 'Bekasi, Jawa Barat', '2022-06-01 20:51:36', '2022-06-02 20:51:36'),
+(59, 'Alana van Debora', 'Bekasi, Jawa Barat', '2022-06-01 20:51:46', '2022-06-02 20:51:46');
 
 -- --------------------------------------------------------
 
@@ -133,7 +174,12 @@ CREATE TABLE `pesanan` (
 --
 
 INSERT INTO `pesanan` (`id`, `id_invoice`, `id_brg`, `nama_brg`, `jumlah`, `harga`, `status`) VALUES
-(32, 18, 1, 'Adidas', 1, 312000, 'Belum Bayar');
+(32, 18, 1, 'Adidas', 1, 312000, 'Belum Bayar'),
+(33, 19, 1, 'Adidas', 1, 312000, 'Belum Bayar'),
+(34, 26, 1, 'Adidas', 1, 312000, 'Belum Bayar'),
+(35, 30, 2, 'Geof Maxx', 1, 70000, 'Belum Bayar'),
+(36, 31, 3, 'Screamous', 1, 76000, 'Belum Bayar'),
+(37, 49, 1, 'Adidas', 1, 312000, 'Belum Bayar');
 
 --
 -- Trigger `pesanan`
@@ -220,13 +266,13 @@ ALTER TABLE `barang`
 -- AUTO_INCREMENT for table `invoice`
 --
 ALTER TABLE `invoice`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 
 --
 -- AUTO_INCREMENT for table `pesanan`
 --
 ALTER TABLE `pesanan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT for table `user`
